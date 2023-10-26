@@ -1,0 +1,62 @@
+
+.input-todo{
+    margin-bottom: 12px;
+}
+.input-todo input{
+    width: 360px;
+    border-radius: 3px;
+    background-color: rgb(181, 160, 199);
+    padding: 8px;
+    margin-right: 5px;
+    border: 0.5px solid purple;
+}
+.input-todo button{
+    padding: 8px;
+    border-radius: 3px;
+    border: 0.5px solid purple;
+    background-color: rgb(181, 160, 199);
+    cursor: pointer;
+}
+.input-todo button:is(:hover, :focus){
+    background-color: rgb(109, 29, 129);
+}
+/* ===================================================== */
+
+.filter-todo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filter-todo button{
+    padding: 5px 12px;
+    border-radius: 3px;
+    background-color: rgb(181, 160, 199);
+    border: 0.5px solid purple;
+    cursor: pointer;
+
+}
+.filter-todo button:is(:hover, :focus){
+    background-color: rgb(109, 29, 129);
+}
+/* =================================================== */
+
+.list-todo{
+    display: flex;
+    background-color: rgb(181, 160, 199);
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 12px;
+    margin: 0 135px 10px;
+    border-radius: 3px;
+    border: 0.5px solid purple;
+    font-weight:600;
+}
+
+.list-todo button {
+    vertical-align: middle;
+    margin-left: 5px;
+    background-color: rgb(181, 160, 199);
+    cursor: pointer;
+}

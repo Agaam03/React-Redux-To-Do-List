@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+/* ========= STYLE APP CSS ============*/
+.section{
+    width: 50%;
+    margin: 75px auto;
+    align-items: center;
+    text-align: center;
+}
+.section h1{
+    font-size: 33px;
+    margin-bottom: 20px;
+    color: rgb(248, 59, 248);
+}
+
