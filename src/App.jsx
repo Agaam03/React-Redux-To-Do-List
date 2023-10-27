@@ -1,5 +1,5 @@
 import ListTodo from "./Components/ListTodo";
-import InputTodo from "./Components/inputTodo";
+import InputTodo from "./Components/TodoInput";
 import "boxicons";
 
 function App() {
