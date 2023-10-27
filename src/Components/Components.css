@@ -1,44 +1,63 @@
 
 .input-todo{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
     margin-bottom: 12px;
 }
 .input-todo input{
-    width: 360px;
+    width: 450px;
     border-radius: 3px;
-    background-color: rgb(181, 160, 199);
+    background-color: rgb(201, 152, 206);
+    font-size: 15px;
+    font-weight: 600;
     padding: 8px;
     margin-right: 5px;
-    border: 0.5px solid purple;
+    border: 0.5px solid rgb(51, 1, 43);
 }
 .input-todo button{
-    padding: 8px;
+    align-items: center;
+    vertical-align: middle;
+
+    padding: 5px 5px 2px;
+
     border-radius: 3px;
-    border: 0.5px solid purple;
-    background-color: rgb(181, 160, 199);
+    border: 0.5px solid rgba(0, 0, 0, 0);
+    background-color: rgb(201, 152, 206);
     cursor: pointer;
+    transition: all ease .55s;
+
 }
 .input-todo button:is(:hover, :focus){
-    background-color: rgb(109, 29, 129);
+
+    background-color: rgb(146, 72, 146);
+    transform: scale(1.09);
 }
 /* ===================================================== */
 
 .filter-todo {
     display: flex;
-    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 .filter-todo button{
     padding: 5px 12px;
-    border-radius: 3px;
+    border-radius: 22px;
     background-color: rgb(181, 160, 199);
     border: 0.5px solid purple;
     cursor: pointer;
+    font-weight: 800;
+    color: rgb(123, 65, 131);
+    transition: all ease .55s;
+    
 
 }
 .filter-todo button:is(:hover, :focus){
-    background-color: rgb(109, 29, 129);
+    background-color: rgb(124, 58, 141);
+    color: black;
+    transform: scale(1.09);
 }
+
 /* =================================================== */
 
 .list-todo{
@@ -48,9 +67,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 3px 12px;
-    margin: 0 135px 10px;
+    width: 450px;
+    margin-bottom: 12px;
     border-radius: 3px;
-    border: 0.5px solid purple;
+    border: 0.5px solid rgb(49, 1, 49);
     font-weight:600;
 }
 
@@ -59,4 +79,15 @@
     margin-left: 5px;
     background-color: rgb(181, 160, 199);
     cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .input-todo{
+        width:100%;
+    }
+    .input-todo input{
+        width: 350px;
+    }
+    .list-todo{
+        width: 350px;
+    }
 }
