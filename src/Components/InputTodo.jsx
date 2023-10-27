@@ -19,11 +19,11 @@ function InputTodo() {
       <form>
         <input
           type="text"
-          placeholder="What to do ..."
+          placeholder="What to do..."
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button onClick={handleAddTodo}><box-icon name='plus' ></box-icon></button>
+        <button onClick={handleAddTodo}><box-icon name='plus' animation='spin' ></box-icon></button>
       </form>
     </div>
   );
