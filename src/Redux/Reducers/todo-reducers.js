@@ -6,8 +6,7 @@ import {
 } from "../Action/action";
 
 const initialState = {
-  todos: [],
-  filter: "SHOW_ALL",
+  todos: []
 };
 
 const todoReducer = (state = initialState, action) => {
